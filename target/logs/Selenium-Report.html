@@ -1,0 +1,1683 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Selenium Logs</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Sat Aug 01 00:19:49 CDT 2020<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.custom.library.GlobalSeleniumLibrary category">com.custom.library.GlobalSeleniumLibrary</td>
+<td>GlobalSeleniumLibrary.java:303</td>
+<td title="Message">Error- </td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+<br>&nbsp;&nbsp;&nbsp;&nbsp;System info: host: 'LAPTOP-9444934C', ip: '192.168.1.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Driver info: driver.version: RemoteWebDriver
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:217)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:140)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:153)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.custom.library.GlobalSeleniumLibrary.startRemoteBrowser(GlobalSeleniumLibrary.java:300)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.custom.library.BasePage.beforeEachTestStart(BasePage.java:30)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeMethod(Invoker.java:590)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestRunner.run(TestRunner.java:610)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.runSuites(TestNG.java:1133)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.run(TestNG.java:1104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.161:4857 [/192.168.1.161] failed: Connection timed out: no further information
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:138)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:337)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:136)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	... 32 more
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Caused by: java.net.ConnectException: Connection timed out: no further information
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:589)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.net.Socket.connect(Socket.java:648)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	... 47 more
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Selenium Logs</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Sat Aug 01 00:25:21 CDT 2020<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.custom.library.GlobalSeleniumLibrary category">com.custom.library.GlobalSeleniumLibrary</td>
+<td>GlobalSeleniumLibrary.java:303</td>
+<td title="Message">Error- </td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+<br>&nbsp;&nbsp;&nbsp;&nbsp;System info: host: 'LAPTOP-9444934C', ip: '192.168.1.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Driver info: driver.version: RemoteWebDriver
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:217)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:140)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:153)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.custom.library.GlobalSeleniumLibrary.startRemoteBrowser(GlobalSeleniumLibrary.java:300)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.custom.library.BasePage.beforeEachTestStart(BasePage.java:30)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeMethod(Invoker.java:590)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestRunner.run(TestRunner.java:610)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.runSuites(TestNG.java:1133)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.run(TestNG.java:1104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.161:4857 [/192.168.1.161] failed: Connection timed out: no further information
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:138)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:337)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:136)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	... 32 more
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Caused by: java.net.ConnectException: Connection timed out: no further information
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:589)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.net.Socket.connect(Socket.java:648)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	... 47 more
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Selenium Logs</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Sat Aug 01 00:39:11 CDT 2020<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>2</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.custom.library.GlobalSeleniumLibrary category">com.custom.library.GlobalSeleniumLibrary</td>
+<td>GlobalSeleniumLibrary.java:303</td>
+<td title="Message">Error- </td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+<br>&nbsp;&nbsp;&nbsp;&nbsp;System info: host: 'LAPTOP-9444934C', ip: '192.168.1.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Driver info: driver.version: RemoteWebDriver
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:217)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:140)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:153)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.custom.library.GlobalSeleniumLibrary.startRemoteBrowser(GlobalSeleniumLibrary.java:300)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.custom.library.BasePage.beforeEachTestStart(BasePage.java:30)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeMethod(Invoker.java:590)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestRunner.run(TestRunner.java:610)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.runSuites(TestNG.java:1133)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.run(TestNG.java:1104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.161:4857 [/192.168.1.161] failed: Connection timed out: no further information
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:138)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:337)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:136)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	... 32 more
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Caused by: java.net.ConnectException: Connection timed out: no further information
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:589)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.net.Socket.connect(Socket.java:648)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	... 47 more
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Selenium Logs</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Sat Aug 01 00:44:27 CDT 2020<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.custom.library.GlobalSeleniumLibrary category">com.custom.library.GlobalSeleniumLibrary</td>
+<td>GlobalSeleniumLibrary.java:303</td>
+<td title="Message">Error- </td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+<br>&nbsp;&nbsp;&nbsp;&nbsp;System info: host: 'LAPTOP-9444934C', ip: '192.168.1.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Driver info: driver.version: RemoteWebDriver
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:217)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:140)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:153)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.custom.library.GlobalSeleniumLibrary.startRemoteBrowser(GlobalSeleniumLibrary.java:300)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.custom.library.BasePage.beforeEachTestStart(BasePage.java:30)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeMethod(Invoker.java:590)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestRunner.run(TestRunner.java:610)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.runSuites(TestNG.java:1133)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.run(TestNG.java:1104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.161:4857 [/192.168.1.161] failed: Connection timed out: no further information
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:138)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:337)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:136)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	... 32 more
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Caused by: java.net.ConnectException: Connection timed out: no further information
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:589)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.net.Socket.connect(Socket.java:648)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	... 47 more
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Selenium Logs</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Sat Aug 01 00:48:39 CDT 2020<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.custom.library.GlobalSeleniumLibrary category">com.custom.library.GlobalSeleniumLibrary</td>
+<td>GlobalSeleniumLibrary.java:303</td>
+<td title="Message">Error- </td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+<br>&nbsp;&nbsp;&nbsp;&nbsp;System info: host: 'LAPTOP-9444934C', ip: '192.168.1.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Driver info: driver.version: RemoteWebDriver
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:217)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:140)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:153)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.custom.library.GlobalSeleniumLibrary.startRemoteBrowser(GlobalSeleniumLibrary.java:300)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.custom.library.BasePage.beforeEachTestStart(BasePage.java:30)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeMethod(Invoker.java:590)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestRunner.run(TestRunner.java:610)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.runSuites(TestNG.java:1133)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.run(TestNG.java:1104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.161:4857 [/192.168.1.161] failed: Connection timed out: no further information
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:138)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:337)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:136)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	... 32 more
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Caused by: java.net.ConnectException: Connection timed out: no further information
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:589)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.net.Socket.connect(Socket.java:648)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	... 47 more
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Selenium Logs</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Sat Aug 01 01:02:58 CDT 2020<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.custom.library.GlobalSeleniumLibrary category">com.custom.library.GlobalSeleniumLibrary</td>
+<td>GlobalSeleniumLibrary.java:303</td>
+<td title="Message">Error- </td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+<br>&nbsp;&nbsp;&nbsp;&nbsp;System info: host: 'LAPTOP-9444934C', ip: '192.168.1.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Driver info: driver.version: RemoteWebDriver
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:217)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:140)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:153)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.custom.library.GlobalSeleniumLibrary.startRemoteBrowser(GlobalSeleniumLibrary.java:300)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.custom.library.BasePage.beforeEachTestStart(BasePage.java:30)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeMethod(Invoker.java:590)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestRunner.run(TestRunner.java:610)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.runSuites(TestNG.java:1133)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.run(TestNG.java:1104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.161:4857 [/192.168.1.161] failed: Connection timed out: no further information
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:138)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:337)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:136)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	... 32 more
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Caused by: java.net.ConnectException: Connection timed out: no further information
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:589)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.net.Socket.connect(Socket.java:648)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	... 47 more
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Selenium Logs</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Sat Aug 01 02:25:22 CDT 2020<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.custom.library.GlobalSeleniumLibrary category">com.custom.library.GlobalSeleniumLibrary</td>
+<td>GlobalSeleniumLibrary.java:303</td>
+<td title="Message">Error- </td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+<br>&nbsp;&nbsp;&nbsp;&nbsp;System info: host: 'LAPTOP-9444934C', ip: '192.168.1.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Driver info: driver.version: RemoteWebDriver
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:217)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:140)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:153)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.custom.library.GlobalSeleniumLibrary.startRemoteBrowser(GlobalSeleniumLibrary.java:300)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.custom.library.BasePage.beforeEachTestStart(BasePage.java:30)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeMethod(Invoker.java:590)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestRunner.run(TestRunner.java:610)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.runSuites(TestNG.java:1133)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.run(TestNG.java:1104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.161:4857 [/192.168.1.161] failed: Connection timed out: no further information
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:138)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:337)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:136)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	... 32 more
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Caused by: java.net.ConnectException: Connection timed out: no further information
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:589)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.net.Socket.connect(Socket.java:648)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	... 47 more
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Selenium Logs</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Sat Aug 01 02:26:47 CDT 2020<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.custom.library.GlobalSeleniumLibrary category">com.custom.library.GlobalSeleniumLibrary</td>
+<td>GlobalSeleniumLibrary.java:303</td>
+<td title="Message">Error- </td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+<br>&nbsp;&nbsp;&nbsp;&nbsp;System info: host: 'LAPTOP-9444934C', ip: '192.168.1.100', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Driver info: driver.version: RemoteWebDriver
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:217)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:140)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:153)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.custom.library.GlobalSeleniumLibrary.startRemoteBrowser(GlobalSeleniumLibrary.java:300)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.custom.library.BasePage.beforeEachTestStart(BasePage.java:30)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeMethod(Invoker.java:590)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestRunner.run(TestRunner.java:610)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.runSuites(TestNG.java:1133)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.run(TestNG.java:1104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.161:4857 [/192.168.1.161] failed: Connection timed out: no further information
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:138)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:337)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:136)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	... 32 more
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Caused by: java.net.ConnectException: Connection timed out: no further information
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:589)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.net.Socket.connect(Socket.java:648)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	... 47 more
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Selenium Logs</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Wed Nov 11 15:44:40 CST 2020<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>2</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.custom.library.GlobalSeleniumLibrary category">com.custom.library.GlobalSeleniumLibrary</td>
+<td>GlobalSeleniumLibrary.java:303</td>
+<td title="Message">Error- </td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+<br>&nbsp;&nbsp;&nbsp;&nbsp;System info: host: 'LAPTOP-9444934C', ip: '192.168.1.142', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Driver info: driver.version: RemoteWebDriver
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:217)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:140)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:153)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.custom.library.GlobalSeleniumLibrary.startRemoteBrowser(GlobalSeleniumLibrary.java:300)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.custom.library.BasePage.beforeEachTestStart(BasePage.java:29)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeMethod(Invoker.java:590)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestRunner.run(TestRunner.java:610)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.runSuites(TestNG.java:1133)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.run(TestNG.java:1104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.161:4857 [/192.168.1.161] failed: Connection timed out: no further information
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:138)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:337)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:136)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	... 32 more
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Caused by: java.net.ConnectException: Connection timed out: no further information
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:589)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.net.Socket.connect(Socket.java:648)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	... 47 more
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Selenium Logs</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Wed Nov 11 15:46:22 CST 2020<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>2</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.custom.library.GlobalSeleniumLibrary category">com.custom.library.GlobalSeleniumLibrary</td>
+<td>GlobalSeleniumLibrary.java:303</td>
+<td title="Message">Error- </td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+<br>&nbsp;&nbsp;&nbsp;&nbsp;System info: host: 'LAPTOP-9444934C', ip: '192.168.1.142', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Driver info: driver.version: RemoteWebDriver
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:217)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:140)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:153)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.custom.library.GlobalSeleniumLibrary.startRemoteBrowser(GlobalSeleniumLibrary.java:300)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.custom.library.BasePage.beforeEachTestStart(BasePage.java:29)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeMethod(Invoker.java:590)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestRunner.run(TestRunner.java:610)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.runSuites(TestNG.java:1133)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.run(TestNG.java:1104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.161:4857 [/192.168.1.161] failed: Connection timed out: no further information
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:138)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:337)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:136)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	... 32 more
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Caused by: java.net.ConnectException: Connection timed out: no further information
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:589)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.net.Socket.connect(Socket.java:648)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	... 47 more
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Selenium Logs</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Fri Mar 01 05:12:27 EST 2024<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.custom.library.GlobalSeleniumLibrary category">com.custom.library.GlobalSeleniumLibrary</td>
+<td>GlobalSeleniumLibrary.java:303</td>
+<td title="Message">Error- </td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">org.openqa.selenium.remote.UnreachableBrowserException: Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+<br>&nbsp;&nbsp;&nbsp;&nbsp;System info: host: 'LAPTOP-9444934C', ip: '192.168.1.164', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Driver info: driver.version: RemoteWebDriver
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:217)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:140)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:153)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.custom.library.GlobalSeleniumLibrary.startRemoteBrowser(GlobalSeleniumLibrary.java:300)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.custom.library.BasePage.beforeEachTestStart(BasePage.java:29)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeMethod(Invoker.java:590)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestRunner.run(TestRunner.java:610)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.runSuites(TestNG.java:1133)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.run(TestNG.java:1104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 192.168.1.161:4857 [/192.168.1.161] failed: Connection timed out: no further information
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:359)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:72)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.internal.ApacheHttpClient.fallBackExecute(ApacheHttpClient.java:138)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.internal.ApacheHttpClient.execute(ApacheHttpClient.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:337)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:136)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	... 32 more
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Caused by: java.net.ConnectException: Connection timed out: no further information
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/sun.nio.ch.Net.pollConnect(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:589)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/sun.nio.ch.NioSocketImpl.timedFinishConnect(NioSocketImpl.java:549)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:597)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:333)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.net.Socket.connect(Socket.java:648)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	... 47 more
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Selenium Logs</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Fri Mar 01 05:13:54 EST 2024<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.custom.library.GlobalSeleniumLibrary category">com.custom.library.GlobalSeleniumLibrary</td>
+<td>GlobalSeleniumLibrary.java:78</td>
+<td title="Message">Error- </td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 84
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+<br>&nbsp;&nbsp;&nbsp;&nbsp;System info: host: 'LAPTOP-9444934C', ip: '192.168.1.164', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Driver info: driver.version: ChromeDriver
+<br>&nbsp;&nbsp;&nbsp;&nbsp;remote stacktrace: Backtrace:
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	Ordinal0 [0x00CA87E3+2852835]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	Ordinal0 [0x00B95BB1+1727409]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	Ordinal0 [0x00A6E4B9+517305]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	Ordinal0 [0x00A00BA0+68512]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	Ordinal0 [0x009FD3A0+54176]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	Ordinal0 [0x00A1D9F7+186871]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	Ordinal0 [0x00A1D7FD+186365]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	Ordinal0 [0x00A1B70B+177931]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	Ordinal0 [0x00A02584+75140]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	Ordinal0 [0x00A03650+79440]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	Ordinal0 [0x00A035E9+79337]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	Ordinal0 [0x00BAAD5C+1813852]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	GetHandleVerifier [0x00DCC616+1075574]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	GetHandleVerifier [0x00DCC367+1074887]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	GetHandleVerifier [0x00DD7497+1120247]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	GetHandleVerifier [0x00DCCC16+1077110]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	Ordinal0 [0x00BA3206+1782278]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	Ordinal0 [0x00BAC3BB+1819579]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	Ordinal0 [0x00BAC523+1819939]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	Ordinal0 [0x00BC2B45+1911621]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	BaseThreadInitThunk [0x763F7BA9+25]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	RtlInitializeExceptionChain [0x77E4BD2B+107]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	RtlClearBits [0x77E4BCAF+191]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$24(ProtocolHandshake.java:359)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:362)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:136)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:217)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:140)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.custom.library.GlobalSeleniumLibrary.startChromeBrowser(GlobalSeleniumLibrary.java:73)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.custom.library.GlobalSeleniumLibrary.startLocalBrowser(GlobalSeleniumLibrary.java:275)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.custom.library.BasePage.beforeEachTestStart(BasePage.java:31)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeMethod(Invoker.java:590)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestRunner.run(TestRunner.java:610)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.runSuites(TestNG.java:1133)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.run(TestNG.java:1104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Selenium Logs</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Fri Mar 01 05:14:15 EST 2024<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.custom.library.GlobalSeleniumLibrary category">com.custom.library.GlobalSeleniumLibrary</td>
+<td>GlobalSeleniumLibrary.java:78</td>
+<td title="Message">Error- </td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 84
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+<br>&nbsp;&nbsp;&nbsp;&nbsp;System info: host: 'LAPTOP-9444934C', ip: '192.168.1.164', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Driver info: driver.version: ChromeDriver
+<br>&nbsp;&nbsp;&nbsp;&nbsp;remote stacktrace: Backtrace:
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	Ordinal0 [0x00CA87E3+2852835]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	Ordinal0 [0x00B95BB1+1727409]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	Ordinal0 [0x00A6E4B9+517305]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	Ordinal0 [0x00A00BA0+68512]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	Ordinal0 [0x009FD3A0+54176]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	Ordinal0 [0x00A1D9F7+186871]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	Ordinal0 [0x00A1D7FD+186365]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	Ordinal0 [0x00A1B70B+177931]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	Ordinal0 [0x00A02584+75140]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	Ordinal0 [0x00A03650+79440]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	Ordinal0 [0x00A035E9+79337]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	Ordinal0 [0x00BAAD5C+1813852]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	GetHandleVerifier [0x00DCC616+1075574]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	GetHandleVerifier [0x00DCC367+1074887]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	GetHandleVerifier [0x00DD7497+1120247]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	GetHandleVerifier [0x00DCCC16+1077110]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	Ordinal0 [0x00BA3206+1782278]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	Ordinal0 [0x00BAC3BB+1819579]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	Ordinal0 [0x00BAC523+1819939]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	Ordinal0 [0x00BC2B45+1911621]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	BaseThreadInitThunk [0x763F7BA9+25]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	RtlInitializeExceptionChain [0x77E4BD2B+107]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	RtlClearBits [0x77E4BCAF+191]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$24(ProtocolHandshake.java:359)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:362)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:136)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:217)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:140)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.custom.library.GlobalSeleniumLibrary.startChromeBrowser(GlobalSeleniumLibrary.java:73)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.custom.library.GlobalSeleniumLibrary.startLocalBrowser(GlobalSeleniumLibrary.java:275)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.custom.library.BasePage.beforeEachTestStart(BasePage.java:31)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeMethod(Invoker.java:590)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestRunner.run(TestRunner.java:610)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.runSuites(TestNG.java:1133)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.run(TestNG.java:1104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Selenium Logs</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Fri Mar 01 05:34:34 EST 2024<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.automation.tests.ActionsTests2 category">com.automation.tests.ActionsTests2</td>
+<td>ActionsTests2.java:23</td>
+<td title="Message">go to - https://www.usps.com/</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Selenium Logs</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Fri Mar 01 05:34:36 EST 2024<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.automation.tests.ActionsTests2 category">com.automation.tests.ActionsTests2</td>
+<td>ActionsTests2.java:23</td>
+<td title="Message">go to - https://www.usps.com/</td>
+</tr>
+
+<tr>
+<td>36293</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.custom.library.GlobalSeleniumLibrary category">com.custom.library.GlobalSeleniumLibrary</td>
+<td>GlobalSeleniumLibrary.java:482</td>
+<td title="Message">Testing file names: testing_mouse_hoverover2024_03_01_05_35_08_159.png</td>
+</tr>
+
+<tr>
+<td>36294</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.custom.library.GlobalSeleniumLibrary category">com.custom.library.GlobalSeleniumLibrary</td>
+<td>GlobalSeleniumLibrary.java:486</td>
+<td title="Message">Testing file timestamp: 2024_03_01_05_35_08_159</td>
+</tr>
+
+<tr>
+<td>36294</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.custom.library.GlobalSeleniumLibrary category">com.custom.library.GlobalSeleniumLibrary</td>
+<td>GlobalSeleniumLibrary.java:482</td>
+<td title="Message">Testing file names: testing_mouse_hoverover2024_03_01_05_35_09_219.png</td>
+</tr>
+
+<tr>
+<td>36294</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.custom.library.GlobalSeleniumLibrary category">com.custom.library.GlobalSeleniumLibrary</td>
+<td>GlobalSeleniumLibrary.java:486</td>
+<td title="Message">Testing file timestamp: 2024_03_01_05_35_09_219</td>
+</tr>
+
+<tr>
+<td>36308</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.custom.library.GlobalSeleniumLibrary category">com.custom.library.GlobalSeleniumLibrary</td>
+<td>GlobalSeleniumLibrary.java:482</td>
+<td title="Message">Testing file names: testing_mouse_hoverover2024_03_01_05_35_08_159.png</td>
+</tr>
+
+<tr>
+<td>36309</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.custom.library.GlobalSeleniumLibrary category">com.custom.library.GlobalSeleniumLibrary</td>
+<td>GlobalSeleniumLibrary.java:486</td>
+<td title="Message">Testing file timestamp: 2024_03_01_05_35_08_159</td>
+</tr>
+
+<tr>
+<td>36309</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.custom.library.GlobalSeleniumLibrary category">com.custom.library.GlobalSeleniumLibrary</td>
+<td>GlobalSeleniumLibrary.java:482</td>
+<td title="Message">Testing file names: testing_mouse_hoverover2024_03_01_05_35_09_219.png</td>
+</tr>
+
+<tr>
+<td>36309</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.custom.library.GlobalSeleniumLibrary category">com.custom.library.GlobalSeleniumLibrary</td>
+<td>GlobalSeleniumLibrary.java:486</td>
+<td title="Message">Testing file timestamp: 2024_03_01_05_35_09_219</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Selenium Logs</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Fri Mar 01 05:36:19 EST 2024<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="com.custom.library.GlobalSeleniumLibrary category">com.custom.library.GlobalSeleniumLibrary</td>
+<td>GlobalSeleniumLibrary.java:238</td>
+<td title="Message">Error- </td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools
+<br>&nbsp;&nbsp;&nbsp;&nbsp;  (failed to check if window was closed: disconnected: not connected to DevTools)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;  (Session info: chrome=122.0.6261.95)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Build info: version: '3.6.0', revision: '6fbf3ec767', time: '2017-09-27T15:28:36.4Z'
+<br>&nbsp;&nbsp;&nbsp;&nbsp;System info: host: 'LAPTOP-9444934C', ip: '192.168.1.164', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '14.0.1'
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Driver info: org.openqa.selenium.chrome.ChromeDriver
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=122.0.6261.94 (880dbf29479c6152d5e4f08dfd3a96b30f919e56-refs/branch-heads/6261@{#960}), userDataDir=C:\Users\garne\AppData\Local\Temp\scoped_dir12192_2040546729}, timeouts={implicit=0, pageLoad=300000, script=30000}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=WINDOWS, proxy=Proxy(), webauthn:extension:minPinLength=true, goog:chromeOptions={debuggerAddress=localhost:50452}, webauthn:extension:credBlob=true, webauthn:extension:prf=true, acceptInsecureCerts=false, browserVersion=122.0.6261.95, fedcm:accounts=true, browserName=chrome, javascriptEnabled=true, platformName=WINDOWS, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Session ID: b5359ad1f73f482432235ac92b6450cb
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:586)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:643)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:328)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.custom.library.GlobalSeleniumLibrary.captureScreenshot(GlobalSeleniumLibrary.java:232)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.custom.library.BasePage.afterEachTestComplete(BasePage.java:40)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:515)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:217)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeMethod(Invoker.java:712)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestRunner.run(TestRunner.java:610)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.runSuites(TestNG.java:1133)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.TestNG.run(TestNG.java:1104)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Selenium Logs</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Fri Mar 01 05:38:51 EST 2024<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>File:Line</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.custom.library.GlobalSeleniumLibrary category">com.custom.library.GlobalSeleniumLibrary</td>
+<td>GlobalSeleniumLibrary.java:482</td>
+<td title="Message">Testing file names: buyACourseTest2024_03_01_05_38_54_002.png</td>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.custom.library.GlobalSeleniumLibrary category">com.custom.library.GlobalSeleniumLibrary</td>
+<td>GlobalSeleniumLibrary.java:486</td>
+<td title="Message">Testing file timestamp: 2024_03_01_05_38_54_002</td>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.custom.library.GlobalSeleniumLibrary category">com.custom.library.GlobalSeleniumLibrary</td>
+<td>GlobalSeleniumLibrary.java:482</td>
+<td title="Message">Testing file names: loginTest2024_03_01_05_36_55_879.png</td>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.custom.library.GlobalSeleniumLibrary category">com.custom.library.GlobalSeleniumLibrary</td>
+<td>GlobalSeleniumLibrary.java:486</td>
+<td title="Message">Testing file timestamp: 2024_03_01_05_36_55_879</td>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.custom.library.GlobalSeleniumLibrary category">com.custom.library.GlobalSeleniumLibrary</td>
+<td>GlobalSeleniumLibrary.java:482</td>
+<td title="Message">Testing file names: loginTest2024_03_01_05_37_36_665.png</td>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.custom.library.GlobalSeleniumLibrary category">com.custom.library.GlobalSeleniumLibrary</td>
+<td>GlobalSeleniumLibrary.java:486</td>
+<td title="Message">Testing file timestamp: 2024_03_01_05_37_36_665</td>
+</tr>
+
+<tr>
+<td>16</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.custom.library.GlobalSeleniumLibrary category">com.custom.library.GlobalSeleniumLibrary</td>
+<td>GlobalSeleniumLibrary.java:482</td>
+<td title="Message">Testing file names: loginTest2024_03_01_05_38_17_312.png</td>
+</tr>
+
+<tr>
+<td>16</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.custom.library.GlobalSeleniumLibrary category">com.custom.library.GlobalSeleniumLibrary</td>
+<td>GlobalSeleniumLibrary.java:486</td>
+<td title="Message">Testing file timestamp: 2024_03_01_05_38_17_312</td>
+</tr>
+
+<tr>
+<td>16</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.custom.library.GlobalSeleniumLibrary category">com.custom.library.GlobalSeleniumLibrary</td>
+<td>GlobalSeleniumLibrary.java:482</td>
+<td title="Message">Testing file names: testing_mouse_hoverover2024_03_01_05_35_08_159.png</td>
+</tr>
+
+<tr>
+<td>16</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.custom.library.GlobalSeleniumLibrary category">com.custom.library.GlobalSeleniumLibrary</td>
+<td>GlobalSeleniumLibrary.java:486</td>
+<td title="Message">Testing file timestamp: 2024_03_01_05_35_08_159</td>
+</tr>
+
+<tr>
+<td>16</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.custom.library.GlobalSeleniumLibrary category">com.custom.library.GlobalSeleniumLibrary</td>
+<td>GlobalSeleniumLibrary.java:482</td>
+<td title="Message">Testing file names: testing_mouse_hoverover2024_03_01_05_35_09_219.png</td>
+</tr>
+
+<tr>
+<td>16</td>
+<td title="main thread">main</td>
+<td title="Level">INFO</td>
+<td title="com.custom.library.GlobalSeleniumLibrary category">com.custom.library.GlobalSeleniumLibrary</td>
+<td>GlobalSeleniumLibrary.java:486</td>
+<td title="Message">Testing file timestamp: 2024_03_01_05_35_09_219</td>
+</tr>

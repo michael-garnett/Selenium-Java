@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: com.automation.tests.TestCommandline
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 10.283 sec <<< FAILURE!
+Test2(com.automation.tests.TestCommandline)  Time elapsed: 2.928 sec  <<< FAILURE!
+java.lang.AssertionError: expected [aaaa] but found [Google]
+	at org.testng.Assert.fail(Assert.java:93)
+	at org.testng.Assert.failNotEquals(Assert.java:512)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:134)
+	at org.testng.Assert.assertEquals(Assert.java:115)
+	at org.testng.Assert.assertEquals(Assert.java:189)
+	at org.testng.Assert.assertEquals(Assert.java:199)
+	at com.automation.tests.TestCommandline.Test2(TestCommandline.java:29)
+
